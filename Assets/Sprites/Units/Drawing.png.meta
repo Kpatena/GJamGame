@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: 3acebee421072ff43a07fb1b275959ec
+timeCreated: 1454136802
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Drawing_0
+    21300002: Drawing_1
+    21300004: Drawing_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Drawing_0
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 653
+        width: 361
+        height: 379
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 88.5, y: -143.5}
+        - {x: 101.5, y: -124.5}
+        - {x: 93.5, y: -77.5}
+        - {x: 51.5, y: 1.5}
+        - {x: 104.5, y: -19.5}
+        - {x: 130.5, y: -23.5}
+        - {x: 159.5, y: -3.5}
+        - {x: 162.5, y: 13.5}
+        - {x: 162.5, y: 64.5}
+        - {x: 141.5, y: 98.5}
+        - {x: 91.5, y: 126.5}
+        - {x: -93.5, y: 126.5}
+        - {x: -148.5, y: 93.5}
+        - {x: -169.5, y: 68.5}
+        - {x: -169.5, y: 7.5}
+        - {x: -160.5, y: -21.5}
+        - {x: -122.5, y: -10.5}
+        - {x: -107.5, y: 4.5}
+        - {x: -68.5, y: 2.5}
+        - {x: -102.5, y: -73.5}
+        - {x: -103.5, y: -152.5}
+        - {x: -34.5, y: -152.5}
+        - {x: -25.5, y: -111.5}
+        - {x: 38.5, y: -152.5}
+        - {x: 47.5, y: -152.5}
+    - name: Drawing_1
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 658
+        width: 342
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 27, y: 0, z: 21, w: 0}
+      outline:
+      - - {x: 141, y: 54.5}
+        - {x: 115, y: 67.5}
+        - {x: 43, y: 95.5}
+        - {x: -47, y: 95.5}
+        - {x: -103, y: 92.5}
+        - {x: -142, y: 80.5}
+        - {x: -148, y: 64.5}
+        - {x: -148, y: 10.5}
+        - {x: -147, y: 9.5}
+        - {x: -63, y: -20.5}
+        - {x: -84, y: -75.5}
+        - {x: -71, y: -136.5}
+        - {x: -45, y: -136.5}
+        - {x: -4, y: -116.5}
+        - {x: 37, y: -136.5}
+        - {x: 92, y: -136.5}
+        - {x: 120, y: -84.5}
+        - {x: 80, y: -26.5}
+        - {x: 141, y: -11.5}
+    - name: Drawing_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 673
+        width: 360
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 112, y: -69}
+        - {x: 163, y: -45}
+        - {x: 163, y: 51}
+        - {x: 155, y: 70}
+        - {x: 88, y: 119}
+        - {x: 51, y: 127}
+        - {x: -65, y: 127}
+        - {x: -123, y: 119}
+        - {x: -157, y: 82}
+        - {x: -167, y: 59}
+        - {x: -167, y: -19}
+        - {x: -161, y: -40}
+        - {x: -123, y: -35}
+        - {x: -84, y: 19}
+        - {x: -109, y: -63}
+        - {x: -109, y: -120}
+        - {x: -90, y: -138}
+        - {x: -49, y: -129}
+        - {x: -37, y: -113}
+        - {x: -7, y: -143}
+        - {x: 53, y: -143}
+        - {x: 68, y: -141}
+        - {x: 81, y: -120}
+        - {x: 85, y: -94}
+        - {x: 79, y: 6}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

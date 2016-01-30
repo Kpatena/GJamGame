@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: 6cac502ebbf7d7846a68346ecfbb4d06
+timeCreated: 1454137888
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Drawing (1)_0
+    21300002: Drawing (1)_1
+    21300004: Drawing (1)_2
+    21300006: Drawing (1)_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Drawing (1)_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 803
+        width: 160
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 73.5}
+        - {x: -50, y: 68.5}
+        - {x: -66, y: 19.5}
+        - {x: -66, y: -49.5}
+        - {x: -48, y: -81.5}
+        - {x: -28, y: -82.5}
+        - {x: 58, y: -82.5}
+        - {x: 70, y: -73.5}
+        - {x: 70, y: 53.5}
+        - {x: 40, y: 73.5}
+      - - {x: -27, y: -61.5}
+        - {x: -46, y: 29.5}
+        - {x: 60, y: 9.5}
+        - {x: 22, y: -69.5}
+      - - {x: -19, y: -8.5}
+        - {x: -20, y: -11.5}
+        - {x: -20, y: -15.5}
+        - {x: -19, y: -16.5}
+        - {x: 21, y: -16.5}
+        - {x: 21, y: -8.5}
+      - - {x: 8, y: 41.5}
+        - {x: 2, y: 32.5}
+        - {x: 2, y: 20.5}
+        - {x: 9, y: 9.5}
+        - {x: 14, y: 7.5}
+        - {x: 33, y: 7.5}
+        - {x: 36, y: 13.5}
+        - {x: 36, y: 35.5}
+        - {x: 31, y: 41.5}
+      - - {x: -6, y: 37.5}
+        - {x: -18, y: 41.5}
+        - {x: -27, y: 41.5}
+        - {x: -32, y: 31.5}
+        - {x: -32, y: 10.5}
+        - {x: -21, y: 8.5}
+        - {x: -10, y: 8.5}
+        - {x: -6, y: 11.5}
+        - {x: 0, y: 27.5}
+        - {x: 0, y: 34.5}
+    - name: Drawing (1)_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 801
+        width: 135
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 63.5}
+        - {x: -50.5, y: 63.5}
+        - {x: -57.5, y: 59.5}
+        - {x: -57.5, y: -62.5}
+        - {x: -51.5, y: -70.5}
+        - {x: 51.5, y: -70.5}
+        - {x: 52.5, y: -65.5}
+        - {x: 52.5, y: 53.5}
+        - {x: 43.5, y: 57.5}
+      - - {x: -47.5, y: -27.5}
+        - {x: -13.5, y: 53.5}
+        - {x: 43.5, y: -0.5}
+        - {x: 26.5, y: -49.5}
+      - - {x: -13.5, y: -8.5}
+        - {x: -22.5, y: -11.5}
+        - {x: -22.5, y: -23.5}
+        - {x: 19.5, y: -23.5}
+        - {x: 22.5, y: -21.5}
+        - {x: 22.5, y: -13.5}
+        - {x: 15.5, y: -8.5}
+      - - {x: -0.5, y: 36.5}
+        - {x: -3.5, y: 28.5}
+        - {x: -3.5, y: 5.5}
+        - {x: -2.5, y: 5.5}
+        - {x: 7.5, y: 2.5}
+        - {x: 19.5, y: 2.5}
+        - {x: 24.5, y: 8.5}
+        - {x: 26.5, y: 20.5}
+        - {x: 26.5, y: 36.5}
+      - - {x: -17.5, y: 36.5}
+        - {x: -33.5, y: 36.5}
+        - {x: -33.5, y: 7.5}
+        - {x: -28.5, y: 3.5}
+        - {x: -10.5, y: 3.5}
+        - {x: -6.5, y: 4.5}
+        - {x: -4.5, y: 18.5}
+        - {x: -4.5, y: 30.5}
+        - {x: -13.5, y: 35.5}
+    - name: Drawing (1)_2
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 794
+        width: 126
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60, y: 48.5}
+        - {x: -60, y: -55.5}
+        - {x: -53, y: -57.5}
+        - {x: 34, y: -57.5}
+        - {x: 54, y: -42.5}
+        - {x: 54, y: 20.5}
+        - {x: 31, y: 48.5}
+      - - {x: 21, y: -9.5}
+        - {x: 28, y: 3.5}
+        - {x: 39, y: -14.5}
+        - {x: -2, y: -46.5}
+      - - {x: -10, y: -9.5}
+        - {x: -25, y: -19.5}
+        - {x: -27, y: -25.5}
+        - {x: -27, y: -29.5}
+        - {x: -26, y: -30.5}
+        - {x: 3, y: -30.5}
+        - {x: 24, y: -25.5}
+        - {x: 24, y: -18.5}
+        - {x: 10, y: -9.5}
+      - - {x: -10, y: 28.5}
+        - {x: -33, y: 28.5}
+        - {x: -36, y: 13.5}
+        - {x: -36, y: -1.5}
+        - {x: -28, y: -6.5}
+        - {x: -17, y: -6.5}
+        - {x: -11, y: -3.5}
+        - {x: -3, y: 3.5}
+        - {x: -3, y: 20.5}
+    - name: Drawing (1)_3
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 784
+        width: 122
+        height: 182
+      alignment: 9
+      pivot: {x: 0.4717072, y: 0.5284484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39.45172, y: 63.822388}
+        - {x: -56.54828, y: 63.822388}
+        - {x: -56.54828, y: -66.17761}
+        - {x: 39.45172, y: -66.17761}
+        - {x: 62.45172, y: -45.177612}
+        - {x: 64.45172, y: -34.177612}
+        - {x: 64.45172, y: 37.822388}
+      - - {x: -35.54828, y: -39.177612}
+        - {x: -17.548279, y: 52.822388}
+        - {x: 52.45172, y: 11.822388}
+        - {x: 4.451721, y: -54.177612}
+      - - {x: 0.4517212, y: -3.1776123}
+        - {x: -9.548279, y: -5.1776123}
+        - {x: -15.548279, y: -7.1776123}
+        - {x: -19.548279, y: -10.177612}
+        - {x: -19.548279, y: -15.177612}
+        - {x: -18.548279, y: -17.177612}
+        - {x: 15.451721, y: -17.177612}
+        - {x: 17.451721, y: -13.177612}
+        - {x: 17.451721, y: -9.177612}
+        - {x: 9.451721, y: -3.1776123}
+      - - {x: -28.548279, y: 44.822388}
+        - {x: -28.548279, y: 10.822388}
+        - {x: -26.548279, y: 6.8223877}
+        - {x: 31.451721, y: 6.8223877}
+        - {x: 31.451721, y: 43.822388}
+        - {x: 29.451721, y: 44.822388}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
