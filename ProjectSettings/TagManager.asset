@@ -43,6 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Moon
+    uniqueID: 746412251
+    locked: 0
   - name: Floor
     uniqueID: 2515347981
     locked: 0

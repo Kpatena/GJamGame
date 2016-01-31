@@ -15,6 +15,9 @@ public class WaveSpawner : MonoBehaviour {
 
 	}
 
+	public static bool complete = false;
+	public static bool finalWaveComplete = false;
+
 	public Wave[] waves;
 	private int nextWave = 0;
 
@@ -75,11 +78,12 @@ public class WaveSpawner : MonoBehaviour {
 	void WaveCompleted() 
 	{
 		Debug.Log("Wave Completed");
-
+		complete = true;
 		state = SpawnState.COUNTING;
 		waveCountDown = timeBetweenWaves;
 
 		if (nextWave + 1 > waves.Length - 1) {
+			finalWaveComplete = true;
 			nextWave = 0;
 			Debug.Log ("All waves complete!");
 		} else 
@@ -132,5 +136,25 @@ public class WaveSpawner : MonoBehaviour {
 
 		Transform _sp = spawnPoints [Random.Range (0, spawnPoints.Length)];
 		Instantiate(_enemy, transform.position, transform.rotation);
+	}
+
+	public void setComplete(bool c)
+	{
+		complete = c;
+	}
+
+	public bool getComplete()
+	{
+		return complete;
+	}
+
+	public bool getFinalComplete() 
+	{
+		return finalWaveComplete;
+	}
+
+	public void setFinalComplete(bool c)
+	{
+		finalWaveComplete = c;
 	}
 }

@@ -5,11 +5,14 @@ public class Punch : MonoBehaviour {
 
     public GameObject enemy;
     public GameObject bloodParticle;
+	public static int killed = 0;
 
     public void die()
     {
+		killed++;
         Instantiate(bloodParticle, enemy.transform.position, enemy.transform.rotation);
         Destroy(enemy);
+		Debug.Log ("Killed: " + killed);
     }
 
 	void OnTriggerStay2D(Collider2D other)
