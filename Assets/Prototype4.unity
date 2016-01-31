@@ -1268,6 +1268,34 @@ Prefab:
       propertyPath: bossPosition
       value: 
       objectReference: {fileID: 1595729951}
+    - target: {fileID: 11401362, guid: ff7c8fd32355b5c419a6e85f2f04df4d, type: 2}
+      propertyPath: waves.Array.data[0].enemy
+      value: 
+      objectReference: {fileID: 486174, guid: 06e9cae95a13d6c4681e3218d08c27f2, type: 2}
+    - target: {fileID: 11401362, guid: ff7c8fd32355b5c419a6e85f2f04df4d, type: 2}
+      propertyPath: waves.Array.data[1].enemy
+      value: 
+      objectReference: {fileID: 486174, guid: 06e9cae95a13d6c4681e3218d08c27f2, type: 2}
+    - target: {fileID: 11401362, guid: ff7c8fd32355b5c419a6e85f2f04df4d, type: 2}
+      propertyPath: waves.Array.data[2].enemy
+      value: 
+      objectReference: {fileID: 486174, guid: 06e9cae95a13d6c4681e3218d08c27f2, type: 2}
+    - target: {fileID: 11401362, guid: ff7c8fd32355b5c419a6e85f2f04df4d, type: 2}
+      propertyPath: waves.Array.data[3].enemy
+      value: 
+      objectReference: {fileID: 486174, guid: 06e9cae95a13d6c4681e3218d08c27f2, type: 2}
+    - target: {fileID: 11401362, guid: ff7c8fd32355b5c419a6e85f2f04df4d, type: 2}
+      propertyPath: waves.Array.data[1].count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401362, guid: ff7c8fd32355b5c419a6e85f2f04df4d, type: 2}
+      propertyPath: waves.Array.data[2].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401362, guid: ff7c8fd32355b5c419a6e85f2f04df4d, type: 2}
+      propertyPath: waves.Array.data[3].count
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff7c8fd32355b5c419a6e85f2f04df4d, type: 2}
   m_IsPrefabParent: 0
