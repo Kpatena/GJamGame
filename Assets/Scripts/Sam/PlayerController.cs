@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
         if (!disableButtons)
         {
+			
             if (grounded)
             {
                 doubleJumped = false;
@@ -56,18 +57,16 @@ public class PlayerController : MonoBehaviour {
             }
 
             // A (LEFT)
-            if (Input.GetKey(KeyCode.A))
-            {
-                anim.Play("Running");
-                GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-            }
+			if (Input.GetKey (KeyCode.A)) {
+				anim.Play ("Running");
+				GetComponent<Rigidbody2D> ().velocity = new Vector2 (-moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
+			} 
 
             // D (RIGHT)
-            if (Input.GetKey(KeyCode.D))
-            {
-                anim.Play("Running");
-                GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-            }
+			if (Input.GetKey (KeyCode.D)) {
+				anim.Play ("Running");
+				GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
+			} 
 
             // SPACE (PUNCH)
             if (Input.GetKey(KeyCode.Space))

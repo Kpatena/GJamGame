@@ -1374,6 +1374,10 @@ Prefab:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 11460334, guid: bb8533ef8ad65bc4ea5bf0de90420ccd, type: 2}
+      propertyPath: footSteps
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb8533ef8ad65bc4ea5bf0de90420ccd, type: 2}
   m_IsPrefabParent: 0
@@ -1479,6 +1483,18 @@ Prefab:
     - target: {fileID: 403406, guid: 068712ebe05f5a247b4a1e447a55cd15, type: 2}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209468, guid: 068712ebe05f5a247b4a1e447a55cd15, type: 2}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225674, guid: 068712ebe05f5a247b4a1e447a55cd15, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 105866, guid: 068712ebe05f5a247b4a1e447a55cd15, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 068712ebe05f5a247b4a1e447a55cd15, type: 2}
