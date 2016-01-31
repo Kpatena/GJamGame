@@ -38,7 +38,7 @@ public class EnemyAI : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D> ();
 
 		if (target == null) {
-			Debug.LogError ("No Player found? PANIC!");
+			target = GameObject.FindGameObjectWithTag ("Player").transform;
 		}
 
 		// Start a new path to the target position, rerturn the result to the OnPathComplete method
@@ -50,7 +50,7 @@ public class EnemyAI : MonoBehaviour {
 	IEnumerator UpdatePath() {
 
 		if (target == null) {
-			//TODO: Insert a player search here
+			target = GameObject.FindGameObjectWithTag ("Player").transform;
 
 			yield return false;
 		}
@@ -75,7 +75,7 @@ public class EnemyAI : MonoBehaviour {
 
 		if (target == null) {
 
-			//TODO: insert a player search here
+			target = GameObject.FindGameObjectWithTag ("Player").transform;
 			return;
 		}
 
