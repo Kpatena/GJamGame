@@ -29,6 +29,6 @@ public class GhostStart : MonoBehaviour
 
     void LaunchLevel()
     {
-        SceneManager.LoadScene("Put Scene Here");
+        SceneManager.LoadScene("Prototype4");
     }
 }
