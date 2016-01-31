@@ -43,8 +43,11 @@ public class PlayerController : MonoBehaviour {
             }
             if (Input.GetKeyDown(KeyCode.W) && !doubleJumped && !grounded)
             {
+                anim.Play("Flip");
                 Jump();
                 doubleJumped = true;
+                disableButtons = true;
+                Invoke("EnableButtons", disableDuration);
             }
 
             // A (LEFT)
