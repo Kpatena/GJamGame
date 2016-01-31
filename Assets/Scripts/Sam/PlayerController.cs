@@ -3,8 +3,6 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
-    public Punch punch;
-
     public float moveSpeed;
     public float jumpHeight;
 
@@ -94,13 +92,5 @@ public class PlayerController : MonoBehaviour {
         disableButtons = false;
         anim.Play("Idle");
     }
-
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Enemy" && Input.GetKey(KeyCode.Space))
-        {
-            Debug.Log("punchable");
-            punch.die();
-        }
-    }
+		
 }
