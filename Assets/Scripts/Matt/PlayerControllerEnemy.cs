@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerControllerEnemy : MonoBehaviour {
 
+	private int health = 3;
 	public float moveSpeed;
 	public float jumpHeight;
 	public Transform groundCheck;
