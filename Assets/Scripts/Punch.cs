@@ -5,6 +5,8 @@ public class Punch : MonoBehaviour {
 
     public GameObject enemy;
     public GameObject bloodParticle;
+	private AudioSource threatSound;
+	private AudioSource splatSound;
 	public static int killed = 0;
 
     public void die()
@@ -19,7 +21,14 @@ public class Punch : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Player" && Input.GetKey(KeyCode.Space))
 		{
+			splatSound = GameObject.FindGameObjectWithTag ("SplatSound").GetComponentInParent<AudioSource>();
+			splatSound.Play ();
 			Debug.Log("punchable");
+
+			if (this.gameObject.tag == "Boss") {
+				threatSound = GameObject.FindGameObjectWithTag ("ThreatSound").GetComponentInParent<AudioSource>();
+				threatSound.Play ();
+			}
 			die();
 		}
 	}

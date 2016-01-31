@@ -13,7 +13,7 @@ public class MoonMovement : MonoBehaviour {
 
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (wave.getComplete() && waypointIndex < 4) {
 			moon.transform.position = Vector3.MoveTowards (moon.transform.position, waypoints [waypointIndex].transform.position, Time.deltaTime * moveSpeed);
 			if (moon.transform.position == waypoints [waypointIndex].transform.position) {

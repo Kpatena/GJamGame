@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed;
     public float jumpHeight;
 
+	public AudioSource punchSound;
+	public AudioSource baseJumpSound;
+	public AudioSource doubleJumpSound;
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
@@ -39,10 +42,12 @@ public class PlayerController : MonoBehaviour {
             // W (JUMP)
             if (Input.GetKeyDown(KeyCode.W) && grounded)
             {
+				baseJumpSound.Play ();
                 Jump();
             }
             if (Input.GetKeyDown(KeyCode.W) && !doubleJumped && !grounded)
             {
+				doubleJumpSound.Play ();
                 anim.Play("Flip");
                 Jump();
                 doubleJumped = true;
@@ -69,6 +74,7 @@ public class PlayerController : MonoBehaviour {
             {
                 anim.Play("Punch");
                 disableButtons = true;
+				punchSound.Play ();
                 Invoke("EnableButtons", disableDuration);
             }
 

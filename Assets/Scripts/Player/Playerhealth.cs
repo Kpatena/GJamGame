@@ -8,6 +8,9 @@ public class Playerhealth : MonoBehaviour {
 	public GameObject camera;
 	public GameObject gameOver;
 
+	public AudioSource hurtSound;
+	public AudioSource fallSound;
+
 	private bool flash = false;
 	private bool flashOn = false;
 
@@ -35,10 +38,16 @@ public class Playerhealth : MonoBehaviour {
 	//Collision with an enemy causes player to take damage and flash
 	void OnCollisionEnter2D(Collision2D coll) 
 	{
-		if (coll.gameObject.tag == "Enemy") 
+		if (coll.gameObject.tag == "Enemy" || coll.gameObject.tag == "Fireball" || coll.gameObject.tag == "Boss") 
 		{
+
+			if (coll.gameObject.tag == "Fireball") {
+				Destroy (coll.gameObject);
+			}
+
 			if (currentHealth > 0 && hittable) 
 			{
+				hurtSound.Play();
 				hittable = false;
 				currentHealth--;
 				deleteHeart (currentHealth);
@@ -47,6 +56,9 @@ public class Playerhealth : MonoBehaviour {
 			} 
 				
 		}
+
+
+
 	}
 		
 	//Health system add a heart back if you pick up health
@@ -122,11 +134,13 @@ public class Playerhealth : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Fall")
 		{
+			fallSound.Play ();
 			Instantiate(bloodParticle, this.transform.position, this.transform.rotation);
 			Instantiate(camera, new Vector3(this.transform.position.x, this.transform.position.y, -10), this.transform.rotation);
 			Destroy (player);
 			gameOver.SetActive (true);
 			Time.timeScale = Time.timeScale == 0 ? 1 : 0;
 		}
+			
 	}
 }
