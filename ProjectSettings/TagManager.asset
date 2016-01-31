@@ -9,6 +9,11 @@ TagManager:
   - Fireball
   - BossWaypoint1
   - BossWaypoint2
+  - SplatSound
+  - LaughSound
+  - EarthSound
+  - Boss
+  - ThreatSound
   layers:
   - Default
   - TransparentFX
