@@ -4,6 +4,8 @@ using System.Collections;
 public class ScreenShake : MonoBehaviour {
 
 	public GameObject camera;
+	public GameObject playerPosition;
+	public GameObject bossPosition;
 	public WaveSpawner wave;
 	public float screenShakeTime = 10f;
 	bool right = true;
@@ -22,19 +24,22 @@ public class ScreenShake : MonoBehaviour {
 			screenShakeTime -= Time.deltaTime;
 			if (right) {
 
-				Vector3 tmp = new Vector3(0.5f, camera.transform.localPosition.y, camera.transform.localPosition.z);
-				tmp.x = 0.5f;
+				Vector3 tmp = new Vector3(bossPosition.transform.position.x, bossPosition.transform.position.y, -10);
+				tmp.x = bossPosition.transform.position.x + 0.15f;
 				camera.transform.position = tmp;
 				right = false;
 			} else {
-				camera.transform.position = originalPos;
+				Vector3 tmp = new Vector3(bossPosition.transform.position.x, bossPosition.transform.position.y, -10);
+				tmp.x = bossPosition.transform.position.x - 0.15f;
+				camera.transform.position = tmp;
 				right = true;
 			}
 		}
 
 		if (screenShakeTime < 0 && wave.getFinalComplete ()) 
 		{
-			camera.transform.position = originalPos;
+			Vector3 tmp = new Vector3(playerPosition.transform.position.x, playerPosition.transform.position.y, -10);
+			camera.transform.position = tmp;
 			wave.setFinalComplete (false);
 		}
 

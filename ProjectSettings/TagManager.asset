@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Fall
+  - Fireball
+  - BossWaypoint1
+  - BossWaypoint2
   layers:
   - Default
   - TransparentFX
@@ -51,4 +54,7 @@ TagManager:
     locked: 0
   - name: Players
     uniqueID: 813150337
+    locked: 0
+  - name: Particles
+    uniqueID: 2359812447
     locked: 0

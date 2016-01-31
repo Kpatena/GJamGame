@@ -4,12 +4,21 @@ using System.Collections;
 public class Demon : MonoBehaviour {
 
     public Rigidbody2D fireball;
-    public GameObject player;
     public float maxSpeed;
+	public GameObject[] waypoints;
+	public float moveSpeed = 5f;
+	public float waitTime = 5f;
+
+
+	private bool startMove = false;
+	private bool moveNormally = false;
+	private int waypointIndex = 0;
 
 	// Use this for initialization
 	void Start () {
         InvokeRepeating("LaunchFireballs", 1, 1);
+		waypoints[0] = GameObject.FindGameObjectWithTag("BossWaypoint1");
+		waypoints[1] = GameObject.FindGameObjectWithTag("BossWaypoint2");
 	}
 
     void LaunchFireballs()
@@ -37,4 +46,39 @@ public class Demon : MonoBehaviour {
         //GameObject instance = Instantiate(fireball, new Vector2(demon.transform.position.x, demon.transform.position.y), transform.rotation) as GameObject;
         //instance.GetComponent<Rigidbody2D>().velocity = new Vector3(5, 5, 5);
     }
+
+	void Update() 
+	{
+		if (startMove == false)
+		{
+			waitTime -= Time.deltaTime;
+		}
+
+		if (waitTime < 0) 
+		{
+			startMove = true;
+		}
+		//transform.position = Vector3.MoveTowards (transform.position, waypoints [waypointIndex].transform.position, Time.deltaTime * moveSpeed);
+		if (startMove) 
+		{
+			transform.position = Vector3.MoveTowards (transform.position, waypoints [waypointIndex].transform.position, Time.deltaTime * moveSpeed);
+		}
+
+		if (transform.position == waypoints [waypointIndex].transform.position) {
+			startMove = false;
+			moveNormally = true;
+			waypointIndex = 1;
+		}
+
+		if (transform.position == waypoints [waypointIndex].transform.position) {
+			startMove = false;
+			moveNormally = true;
+			waypointIndex = 0;
+		}
+
+		if (moveNormally) 
+		{
+			transform.position = Vector3.MoveTowards (transform.position, waypoints [waypointIndex].transform.position, Time.deltaTime * moveSpeed);
+		}
+	}
 }

@@ -35,8 +35,12 @@ public class Playerhealth : MonoBehaviour {
 	//Collision with an enemy causes player to take damage and flash
 	void OnCollisionEnter2D(Collision2D coll) 
 	{
-		if (coll.gameObject.tag == "Enemy") 
+		if (coll.gameObject.tag == "Enemy" || coll.gameObject.tag == "Fireball") 
 		{
+			if (coll.gameObject.tag == "Fireball") {
+				Destroy (coll.gameObject);
+			}
+
 			if (currentHealth > 0 && hittable) 
 			{
 				hittable = false;
@@ -47,6 +51,9 @@ public class Playerhealth : MonoBehaviour {
 			} 
 				
 		}
+
+
+
 	}
 		
 	//Health system add a heart back if you pick up health
@@ -128,5 +135,6 @@ public class Playerhealth : MonoBehaviour {
 			gameOver.SetActive (true);
 			Time.timeScale = Time.timeScale == 0 ? 1 : 0;
 		}
+			
 	}
 }
