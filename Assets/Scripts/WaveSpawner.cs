@@ -20,7 +20,7 @@ public class WaveSpawner : MonoBehaviour {
 	public GameObject bossPosition;
 	public GameObject Boss;
 	public GameObject Explosion;
-
+	//public AudioSource notPassSound;
 	public Wave[] waves;
 	private int nextWave = 0;
 
@@ -30,6 +30,8 @@ public class WaveSpawner : MonoBehaviour {
 	private float waveCountDown;
 
 	private float searchCountdown = 1f;
+	private AudioSource laughSound;
+	private AudioSource earthSound;
 
 	private SpawnState state = SpawnState.COUNTING;
 
@@ -161,6 +163,12 @@ public class WaveSpawner : MonoBehaviour {
 
 	public void spawnBoss()
 	{
+		laughSound = GameObject.FindGameObjectWithTag ("LaughSound").GetComponentInParent<AudioSource>();
+		laughSound.Play ();
+
+		earthSound = GameObject.FindGameObjectWithTag ("EarthSound").GetComponentInParent<AudioSource>();
+		earthSound.Play ();
+
 		Instantiate(Explosion, bossPosition.transform.position, bossPosition.transform.rotation);
 		Instantiate(Boss, bossPosition.transform.position, bossPosition.transform.rotation);
 	}
