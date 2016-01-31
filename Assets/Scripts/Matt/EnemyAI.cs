@@ -38,7 +38,9 @@ public class EnemyAI : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D> ();
 
 		if (target == null) {
+
 			target = GameObject.FindGameObjectWithTag("Player").transform;
+
 		}
 
 		// Start a new path to the target position, rerturn the result to the OnPathComplete method
@@ -50,7 +52,8 @@ public class EnemyAI : MonoBehaviour {
 	IEnumerator UpdatePath() {
 
 		if (target == null) {
-			target = GameObject.FindGameObjectWithTag("Player").transform;
+			
+			target = GameObject.FindGameObjectWithTag ("Player").transform;
 
 			yield return false;
 		}
@@ -76,6 +79,7 @@ public class EnemyAI : MonoBehaviour {
 		if (target == null) {
 
 			target = GameObject.FindGameObjectWithTag("Player").transform;
+
 			return;
 		}
 

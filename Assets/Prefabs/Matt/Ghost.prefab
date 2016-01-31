@@ -1,19 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &137776
+--- !u!1 &118920
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 405898}
-  - 212: {fileID: 21229050}
-  - 114: {fileID: 11443440}
-  - 50: {fileID: 5064660}
-  - 114: {fileID: 11447656}
-  - 61: {fileID: 6115712}
-  - 114: {fileID: 11496706}
+  - 4: {fileID: 477942}
+  - 212: {fileID: 21286598}
+  - 114: {fileID: 11408252}
+  - 50: {fileID: 5096324}
+  - 114: {fileID: 11425634}
+  - 61: {fileID: 6121224}
+  - 114: {fileID: 11442938}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Enemy
@@ -21,25 +21,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &405898
+--- !u!4 &477942
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137776}
+  m_GameObject: {fileID: 118920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.99, y: 6.96, z: 0}
+  m_LocalPosition: {x: 7.779106, y: -3.0148692, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5064660
+--- !u!50 &5096324
 Rigidbody2D:
   serializedVersion: 2
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137776}
+  m_GameObject: {fileID: 118920}
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0.25
@@ -50,12 +50,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &6115712
+--- !u!61 &6121224
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137776}
+  m_GameObject: {fileID: 118920}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -64,12 +64,12 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.51, y: 0.73}
---- !u!114 &11443440
+--- !u!114 &11408252
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137776}
+  m_GameObject: {fileID: 118920}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
@@ -92,42 +92,42 @@ MonoBehaviour:
     tagsChange: -1
     tagsSet: -1
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
---- !u!114 &11447656
+--- !u!114 &11425634
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137776}
+  m_GameObject: {fileID: 118920}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0deacda9de433184c9d810c26332e2c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 417450, guid: 51ea708ffdee3484ba29fba07eee5014, type: 2}
   updateRate: 2
   speed: 600
   fMode: 0
   pathIsEnded: 0
   nextWaypointDistance: 3
---- !u!114 &11496706
+--- !u!114 &11442938
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137776}
+  m_GameObject: {fileID: 118920}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c3cc02f5c03087489be900cf0736e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 137776}
+  enemy: {fileID: 118920}
   bloodParticle: {fileID: 198928, guid: f6a465adec00e3843869724d01b390fa, type: 2}
---- !u!212 &21229050
+--- !u!212 &21286598
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137776}
+  m_GameObject: {fileID: 118920}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -162,8 +162,8 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 417450, guid: 51ea708ffdee3484ba29fba07eee5014, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 137776}
+  m_RootGameObject: {fileID: 118920}
   m_IsPrefabParent: 1
