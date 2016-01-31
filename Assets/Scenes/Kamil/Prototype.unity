@@ -540,61 +540,57 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!4 &717259897 stripped
 Transform:
   m_PrefabParentObject: {fileID: 420868, guid: 0856e5b0435130842aa9d22716390440, type: 2}
   m_PrefabInternal: {fileID: 1255376324}
+--- !u!1001 &729220299
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 436114, guid: 8e61207d4d155714cbe6d56ea23029b1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 436114, guid: 8e61207d4d155714cbe6d56ea23029b1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 15.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 436114, guid: 8e61207d4d155714cbe6d56ea23029b1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436114, guid: 8e61207d4d155714cbe6d56ea23029b1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436114, guid: 8e61207d4d155714cbe6d56ea23029b1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436114, guid: 8e61207d4d155714cbe6d56ea23029b1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436114, guid: 8e61207d4d155714cbe6d56ea23029b1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 436114, guid: 8e61207d4d155714cbe6d56ea23029b1, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8e61207d4d155714cbe6d56ea23029b1, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &801773254 stripped
 Transform:
   m_PrefabParentObject: {fileID: 420868, guid: 0856e5b0435130842aa9d22716390440, type: 2}
   m_PrefabInternal: {fileID: 1268652221}
---- !u!1 &873514663
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 873514665}
-  - 114: {fileID: 873514664}
-  m_Layer: 0
-  m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &873514664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 873514663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6345bd4c919c90f4a9922e87b9688557, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waves:
-  - name: Minion Wave 1
-    enemy: {fileID: 405898, guid: aa2bbae4665ca294399f9b44b2b776e0, type: 2}
-    count: 5
-    rate: 1.5
-  timeBetweenWaves: 2
-  waveCountDown: 2
---- !u!4 &873514665
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 873514663}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
 --- !u!4 &994720378 stripped
 Transform:
   m_PrefabParentObject: {fileID: 420868, guid: 0856e5b0435130842aa9d22716390440, type: 2}
@@ -1368,4 +1364,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2

@@ -29,6 +29,7 @@ public class Playerhealth : MonoBehaviour {
 		currentHealth = maxHealth;
 		currentInvincibilityTime = maxInvincibilityTime;
 		rend = GetComponent<SpriteRenderer> ();
+		Time.timeScale = 1;
 	}
 	 
 	//Collision with an enemy causes player to take damage and flash
@@ -112,6 +113,7 @@ public class Playerhealth : MonoBehaviour {
 			Instantiate(camera, new Vector3(this.transform.position.x, this.transform.position.y, -10), this.transform.rotation);
 			Destroy (player);
 			gameOver.SetActive (true);
+			Time.timeScale = Time.timeScale == 0 ? 1 : 0;
 		}
 	}
 
@@ -124,6 +126,7 @@ public class Playerhealth : MonoBehaviour {
 			Instantiate(camera, new Vector3(this.transform.position.x, this.transform.position.y, -10), this.transform.rotation);
 			Destroy (player);
 			gameOver.SetActive (true);
+			Time.timeScale = Time.timeScale == 0 ? 1 : 0;
 		}
 	}
 }
