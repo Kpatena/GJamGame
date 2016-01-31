@@ -31,7 +31,8 @@ public class Playerhealth : MonoBehaviour {
 				currentHealth--;
 				deleteHeart (currentHealth);
 				Debug.Log ("Hit! HP is " + currentHealth + " Hittable: " + hittable);
-			}
+			} 
+				
 		}
 	}
 
