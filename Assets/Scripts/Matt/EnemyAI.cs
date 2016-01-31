@@ -52,7 +52,7 @@ public class EnemyAI : MonoBehaviour {
 		if (target == null) {
 			//TODO: Insert a player search here
 
-			return false;
+			yield return false;
 		}
 
 		seeker.StartPath (transform.position, target.position, OnPathComplete);
