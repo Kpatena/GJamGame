@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+    public Punch punch;
+
     public float moveSpeed;
     public float jumpHeight;
 
@@ -12,6 +14,9 @@ public class PlayerController : MonoBehaviour {
     private bool grounded;
 
     private bool doubleJumped;
+
+    bool disableButtons = false;
+    float disableDuration = 0.3f;
 
     private Animator anim;
 
@@ -27,49 +32,75 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (!disableButtons)
+        {
+            if (grounded)
+            {
+                doubleJumped = false;
+            }
+            // W (JUMP)
+            if (Input.GetKeyDown(KeyCode.W) && grounded)
+            {
+                Jump();
+            }
+            if (Input.GetKeyDown(KeyCode.W) && !doubleJumped && !grounded)
+            {
+                Jump();
+                doubleJumped = true;
+            }
 
-        if (grounded)
-        {
-            doubleJumped = false;
-        }
-	    // W (JUMP)
-        if(Input.GetKeyDown(KeyCode.W) && grounded)
-        {
-            Jump();
-        }
-        if (Input.GetKeyDown(KeyCode.W) && !doubleJumped && !grounded)
-        {
-            Jump(); 
-            doubleJumped = true;
-        }
+            // A (LEFT)
+            if (Input.GetKey(KeyCode.A))
+            {
+                anim.Play("Running");
+                GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            }
 
-        // A (LEFT)
-        if (Input.GetKey(KeyCode.A))
-        {
-            anim.Play("Running");
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-        }
+            // D (RIGHT)
+            if (Input.GetKey(KeyCode.D))
+            {
+                anim.Play("Running");
+                GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            }
 
-        // D (RIGHT)
-        if (Input.GetKey(KeyCode.D))
-        {
-            anim.Play("Running");
-            GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-        }
+            // SPACE (PUNCH)
+            if (Input.GetKey(KeyCode.Space))
+            {
+                anim.Play("Punch");
+                disableButtons = true;
+                Invoke("EnableButtons", disableDuration);
+            }
 
-        // ANIMATION HANDLING
+            // ANIMATION HANDLING
 
-        if (GetComponent<Rigidbody2D>().velocity.x > 0)
-        {
-            transform.localScale = new Vector3(3f, 3f, 3f);
-        } else if(GetComponent<Rigidbody2D>().velocity.x < 0)
-        {
-            transform.localScale = new Vector3(-3f, 3f, 3f);
+            if (GetComponent<Rigidbody2D>().velocity.x > 0)
+            {
+                transform.localScale = new Vector3(3f, 3f, 3f);
+            }
+            else if (GetComponent<Rigidbody2D>().velocity.x < 0)
+            {
+                transform.localScale = new Vector3(-3f, 3f, 3f);
+            }
         }
 	}
 
     public void Jump()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+    }
+
+    void EnableButtons()
+    {
+        disableButtons = false;
+        anim.Play("Idle");
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Enemy" && Input.GetKey(KeyCode.Space))
+        {
+            Debug.Log("punchable");
+            punch.die();
+        }
     }
 }

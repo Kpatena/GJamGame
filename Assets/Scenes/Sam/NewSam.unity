@@ -85,6 +85,12 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &45878949 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11474154, guid: fc26cc565f9d7ba45a3185ef00841ba2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1036615502}
+  m_Script: {fileID: 11500000, guid: 0c3cc02f5c03087489be900cf0736e5f, type: 3}
 --- !u!1001 &46031083
 Prefab:
   m_ObjectHideFlags: 0
@@ -333,6 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539e0b1189f7a974ba46bf52f359d1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  punch: {fileID: 45878949}
   moveSpeed: 8
   jumpHeight: 15
   groundCheck: {fileID: 1528760277}
@@ -355,7 +362,7 @@ Rigidbody2D:
   m_GravityScale: 5
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!58 &539396397
@@ -541,7 +548,7 @@ Transform:
   - {fileID: 1721243650}
   - {fileID: 1891673179}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &717259897 stripped
 Transform:
   m_PrefabParentObject: {fileID: 420868, guid: 0856e5b0435130842aa9d22716390440, type: 2}
@@ -644,6 +651,52 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 420868, guid: 0856e5b0435130842aa9d22716390440, type: 2}
   m_PrefabInternal: {fileID: 1330166000}
+--- !u!1001 &1036615502
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 494464, guid: fc26cc565f9d7ba45a3185ef00841ba2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 494464, guid: fc26cc565f9d7ba45a3185ef00841ba2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.1014087
+      objectReference: {fileID: 0}
+    - target: {fileID: 494464, guid: fc26cc565f9d7ba45a3185ef00841ba2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 494464, guid: fc26cc565f9d7ba45a3185ef00841ba2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 494464, guid: fc26cc565f9d7ba45a3185ef00841ba2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 494464, guid: fc26cc565f9d7ba45a3185ef00841ba2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 494464, guid: fc26cc565f9d7ba45a3185ef00841ba2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 494464, guid: fc26cc565f9d7ba45a3185ef00841ba2, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474154, guid: fc26cc565f9d7ba45a3185ef00841ba2, type: 2}
+      propertyPath: bloodParticle
+      value: 
+      objectReference: {fileID: 198928, guid: f6a465adec00e3843869724d01b390fa, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: fc26cc565f9d7ba45a3185ef00841ba2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &1077123806 stripped
 Transform:
   m_PrefabParentObject: {fileID: 420868, guid: 0856e5b0435130842aa9d22716390440, type: 2}
