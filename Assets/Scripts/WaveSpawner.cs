@@ -20,6 +20,7 @@ public class WaveSpawner : MonoBehaviour {
 	public GameObject bossPosition;
 	public GameObject Boss;
 	public GameObject Explosion;
+	public GameObject winScreen;
 	//public AudioSource notPassSound;
 	public Wave[] waves;
 	private int nextWave = 0;
@@ -32,6 +33,7 @@ public class WaveSpawner : MonoBehaviour {
 	private float searchCountdown = 1f;
 	private AudioSource laughSound;
 	private AudioSource earthSound;
+	private static bool winGame = false;
 
 	private SpawnState state = SpawnState.COUNTING;
 
@@ -48,6 +50,11 @@ public class WaveSpawner : MonoBehaviour {
 
 	void Update() 
 	{
+
+		if (winGame) {
+			winScreen.SetActive (true);
+			Time.timeScale = Time.timeScale == 0 ? 1 : 0;
+		}
 
 		if (state == SpawnState.WAITING) 
 		{
@@ -171,5 +178,10 @@ public class WaveSpawner : MonoBehaviour {
 
 		Instantiate(Explosion, bossPosition.transform.position, bossPosition.transform.rotation);
 		Instantiate(Boss, bossPosition.transform.position, bossPosition.transform.rotation);
+	}
+
+	public void setWin(bool c)
+	{
+		winGame = c;
 	}
 }

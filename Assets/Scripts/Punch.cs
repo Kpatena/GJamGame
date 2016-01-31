@@ -3,11 +3,11 @@ using System.Collections;
 
 public class Punch : MonoBehaviour {
 
+	public WaveSpawner wave;
     public GameObject enemy;
     public GameObject bloodParticle;
 	private AudioSource threatSound;
 	private AudioSource splatSound;
-	private GameObject YouWin;
 	public static int killed = 0;
 
     public void die()
@@ -29,9 +29,8 @@ public class Punch : MonoBehaviour {
 			if (this.gameObject.tag == "Boss") {
 				threatSound = GameObject.FindGameObjectWithTag ("ThreatSound").GetComponentInParent<AudioSource>();
 				threatSound.Play ();
-				YouWin = GameObject.FindGameObjectWithTag ("YouWin");
-				YouWin.SetActive (true);
-				Time.timeScale = Time.timeScale == 0 ? 1 : 0;
+				wave = GameObject.FindGameObjectWithTag ("WaveSpawner").GetComponent<WaveSpawner>();
+				wave.setWin (true);
 			}
 		}
 	}

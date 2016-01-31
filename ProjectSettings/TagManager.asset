@@ -16,6 +16,7 @@ TagManager:
   - ThreatSound
   - PunchSound
   - YouWin
+  - WaveSpawner
   layers:
   - Default
   - TransparentFX
